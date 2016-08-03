@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .pong-wrapper {
+        position: relative;
+      }
+      canvas {
+        position: absolute;
+      }
+      #p1-points, #p2-points {
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        top: 10px;
+        z-index: 1;
+      }
+      #p1-points {
+        left: 10px;
+      }
+      #p2-points {
+        left: 580px;
+      }
+    </style>
+    <script src="http://threejs.org/build/three.min.js"></script>
+  </head>
+  <body onload="render()">
+    <div class="pong-wrapper">
+      <canvas id="container" width="600" height="480"></canvas>
+      <div id="p1-points">0</div>
+      <div id="p2-points">0</div>
+    </div>
+    <script src="Ball.js"></script>
+    <script src="Player.js"></script>
+    <script src="Paddle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
