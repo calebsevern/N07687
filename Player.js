@@ -9,3 +9,4 @@ class Player {
     this.pointsDiv.innerHTML = this.points
   }
 }
+
