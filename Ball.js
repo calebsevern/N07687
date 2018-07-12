@@ -6,7 +6,6 @@ class Ball {
     this.gl.position.x = 0.0
   }
   reflectY () {
-    // this.dY *= -1
     this.dY = Math.random() < 0.5 ? -.1 : .1
   }
   getX () {
